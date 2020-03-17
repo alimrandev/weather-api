@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>Weather App</title>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h4>Welcome to Weather Application</h4>
+      <p>Now you can search weather of your city</p>
+      <div>
+        <form id="w-form">
+          <div class="form-group">
+            <label for="city">City</label>
+            <input type="city" class="form-control" id="city" placeholder="Enter City...">
+          </div>
+          <div class="form-group">
+            <label for="country">Country</label>
+            <input type="country" class="form-control" id="country"
+            placeholder="Enter City">
+            <small class="form-text text-muted">Use first two letter of your country (ISO-3166 Formate) name or use short code of your country name</small>
+          </div>
+          <button class="btn btn-primary">Get Weather</button>
+        </form>
+      </div>
+    </div><!-- .jumbotron -->
+    <div class="row pb-5">
+      <div class="col-md-6 m-auto">
+        <div class="card">
+          <h5 class="card-header text-center" id="w-city"></h5>
+            <ul class="list-group">
+              <li class="list-group-item text-center"><img src="#" alt="weather icon" id="w-icon"><p id="w-feels"></p>
+              </li>
+              <li class="list-group-item" id="w-temp">
+  
+              </li>
+              <li class="list-group-item" id="w-pressure">
+ 
+              </li>
+              <li class="list-group-item" id="w-humidity">
+
+              </li>
+            </ul>
+        </div>
+      </div>
+    </div><!-- .row -->
+  </div>
+  <script src="weather.js"></script>
+  <script src="store.js"></script>
+  <script src="ui.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
